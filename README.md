@@ -8,7 +8,24 @@ Code Repository for Group 2
 
 Access: [Check your Outlook inbox if you haven't already](https://outlook.office.com/mail/)
 
-# TBC
+# Directory admin
+
+## Deno.json
+
+Use `deno add [options][packages]` for packages outside Deno built-in's. The `deno.json` file is for those module imports for scripts, such as
+
+```
+"tasks": {
+    "start": "deno run --allow-read main.ts"
+```
+
+allows one to run
+
+```
+deno task start
+```
+
+to directly run the `main.ts` file.
 
 # Mission Brief
 
@@ -89,3 +106,7 @@ At the Show and Tell, your team will present the tasks you have completed indivi
 ## Submit your work
 
 Before Show and Tell session, upload all of your work (screenshots, presentation slides, documents or other files) using the Mission Submission Form.
+
+```
+
+```
