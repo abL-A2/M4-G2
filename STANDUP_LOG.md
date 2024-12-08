@@ -2,7 +2,7 @@
 
 ## Daily Standup Notes  
 ### **Sprint 01:** Mon 9, Dec, 2024 - 09:00 to Thu 12, Dec, 2024 - 17:30
-###**Sprint Goal:** Build an AI Car Insurance Policy Assistant Chatbot
+### **Sprint Goal:** Build an AI Car Insurance Policy Assistant Chatbot
 
 ---
 
