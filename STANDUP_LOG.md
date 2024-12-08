@@ -20,7 +20,7 @@
   - [CM] Built Tina Fronent in React18/Vite/Headless-UI/Tailwind-CSS (Typescript)
   - [CM] Created Gemini Prompts & System Instructions for Tina
   - [CM] Worked on Business Rule Implementation using Gemini/Structured-JSON-w-Schema (Very Cool!)
-  - [CM] Sprint planning complete. Backlog tasks in JIRA, transferred into Sprint 1.
+  - [CM] Sprint planning complete. Backlog tasks in JIRA, transferred into Sprint 1. [Sprint 01 - JIRA](https://amielbenedict22.atlassian.net/jira/software/projects/M4/boards/2?sprints=8)
 
 - **Today:**  [What I'm working on today?]
   - [AA] 
