@@ -1,17 +1,27 @@
 import { useSignal } from "@preact/signals";
+import { marky } from "https://deno.land/x/marky@v1.1.6/mod.ts";
+// import { resetPropWarnings } from "preact/debug";
 
-// Types for our chat messages
+
+// designates name for the AI's responses
+const aiName = "Tina";
+
+// types for our chat messages, and assignment for the name of sender
 interface ChatMessage {
   role: "user" | "ai";
+  name: typeof aiName | "You";
   content: string;
 }
 
+// initialises a markdown parser for use
+const markdownParse = marky;
+
 export default function ChatForm() {
-  // State management using Preact signals
+  // state management using Preact signals
   const messages = useSignal<ChatMessage[]>([]);
   const currentInput = useSignal("");
 
-  // Handle form submission
+  // submission handler
   const handleSubmit = async (e: SubmitEvent) => {
     e.preventDefault();
     console.log("Form submission started");
@@ -22,14 +32,15 @@ export default function ChatForm() {
     }
 
     console.log("Input is valid, proceeding with submission");
-    // Add user message to chat
+    // add user message to chat
+    const userMessage = currentInput.value
     messages.value = [...messages.value, {
       role: "user",
-      content: currentInput.value
+      name: "You",
+      content: userMessage
     }];
 
-    // Clear input
-    const userMessage = currentInput.value;
+    // clear input
     currentInput.value = "";
 
     try {
@@ -45,15 +56,20 @@ export default function ChatForm() {
       const data = await response.json();
       console.log("Received API response:", data);
 
-      // Add AI response to chat
+      // parses stringified text into markdown
+      const parsedText = markdownParse(data.response)
+
+      // add ai response to chat
       messages.value = [...messages.value, {
         role: "ai",
-        content: data.response
+        name: aiName,
+        content: parsedText
       }];
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error processing request:", error);
       messages.value = [...messages.value, {
         role: "ai",
+        name: aiName,
         content: "Sorry, I encountered an error processing your request."
       }];
     }
@@ -61,16 +77,19 @@ export default function ChatForm() {
 
   return (
     <div class="container mx-auto px-4 py-8 max-w-2xl min-h-screen">
-      {/* Chat display area */}
+      {/* ⚠️ chat display area */}
       <div class="bg-white rounded-lg shadow-md p-4 h-[500px] overflow-y-auto mb-4 border border-gray-200">
         {messages.value.map((msg, i) => (
           <div key={i} class={`mb-4 ${msg.role === "ai" ? "text-gray-700" : "text-gray-800"}`}>
-            <strong>{msg.role === "ai" ? "Tina" : "You"}:</strong> {msg.content}
+            <strong>{msg.name}: </strong>
+            {msg.role === "ai"
+    ? <span dangerouslySetInnerHTML={{ __html: msg.content as string }}></span>
+    : msg.content}
           </div>
         ))}
       </div>
 
-      {/* Input form */}
+      {/* input form */}
       <form 
         onSubmit={handleSubmit}
         class="flex gap-2"
@@ -80,7 +99,7 @@ export default function ChatForm() {
           value={currentInput.value}
           onChange={(e) => currentInput.value = (e.target as HTMLInputElement).value}
           class="flex-1 px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 bg-white placeholder-gray-400"
-          placeholder="Type your message..."
+          placeholder="Type your message."
         />
         <button 
           type="submit"
