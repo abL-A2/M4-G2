@@ -20,13 +20,13 @@
   - [CM] Built Tina Fronent in React18/Vite/Headless-UI/Tailwind-CSS (Typescript)
   - [CM] Created Gemini Prompts & System Instructions for Tina
   - [CM] Worked on Business Rule Implementation using Gemini/Structured-JSON-w-Schema (Very Cool!)
-  - [CM] Sprint planning, and put in JIRA
+  - [CM] Sprint planning complete. Backlog tasks in JIRA, transferred into Sprint 1.
 
 - **Today:**  [What I'm working on today?]
   - [AA] 
   - [AA] 
   - [AA] 
-  - [YL] Working Gen AI Training
+  - [YL] Working on Gen AI Training
   - [YL] Setup JIRA Sprint Planning
   - [YL] 
   - [CM] Mocking Google Generative AI SDK for Unit Testing
