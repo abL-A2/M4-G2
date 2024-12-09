@@ -10,8 +10,8 @@
 ### **Date:** Mon 09, Dec, 2024
 
 - **Yesterday:**  [What I completed?]
-  - [AA] 
-  - [AA] 
+  - [AA] Frontend & API server working properly: Fresh+Deno framework
+  - [AA] Started creation of test case & training data 
   - [AA] 
   - [YL] Created Frontend and Backend with empty API
   - [YL] Docker setup Frontend and Backend
@@ -23,7 +23,7 @@
   - [CM] Sprint planning complete. Backlog tasks in JIRA, transferred into Sprint 1. [Sprint 01 - JIRA](https://amielbenedict22.atlassian.net/jira/software/projects/M4/boards/2?sprints=8)
 
 - **Today:**  [What I'm working on today?]
-  - [AA] 
+  - [AA] Refining training data, hopefully generating some to start
   - [AA] 
   - [AA] 
   - [YL] Working on Gen AI Training

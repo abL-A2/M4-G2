@@ -1,12 +1,691 @@
-{
-  "user_input": "I'm looking for affordable insurance. I drive my car to work every day, but it's an older car, I've had it a long time.",
-  "model_response": "To better understand your needs, could you tell me the age and make of your car?  And what's your approximate budget for insurance?",
-  "extracted_information": { "driving_frequency": "frequent", "budget": "constrained", "vehicle_value": "moderate" },
-  "policy_recommendation": "Policy B",
-  "justification": "Policy B offers good coverage for daily drivers at a relatively affordable price, considering the age of your vehicle.",
-  "policy_details": {
-    "Policy A": { "cost": "high", "coverage": "high", "benefits": "comprehensive" },
-    "Policy B": { "cost": "moderate", "coverage": "moderate", "benefits": "standard" },
-    "Policy C": { "cost": "low", "coverage": "low", "benefits": "basic" }
-  }
-}
+[
+    {
+        "user_input": "hi",
+        "model_response": "Hello there! I'm Tina, an AI assistant with Turners. I'm here to help you choose which insurance policy might best fit your needs. I'll need to ask you some questions to make a good suggestion, though. Is this something you'd like to go ahead with?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "Yes that's fine. I need insurance that covers my car and other people.",
+        "model_response": "Thanks for your consent. We can definitely have a look. I'll need a few more details before I can offer a suggestion. Could you tell me the car's make and year?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "car",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "Yes that's fine. I need insurance that covers my car and other people.",
+        "model_response": "Of course! I'll be sure to remember. I do need to circle back to my question, though: could you tell me your car's make and year?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "car",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "oh soryyh si.",
+        "model_response": "I'll assume that was a typo. Don't worry! There's no rush, so please take your time. Did you need me to ask my initial question again?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "car",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "My car's a 2020 Ford Escape, I used to have insurance elsewhere but I just wanted to check with Turners",
+        "model_response": "Of course, thank you. So you want cover for your 2020 Ford Escape and for third parties. Your vehicle and your needs easily match our Comprehensive insurance policies. They'll cover your vehicle and any damage you might cause other people's cars or property, plus we bundle that with mechanical breakdown insurance. You could go find a staff member to get more details, or did you want to try checking another vehicle?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "car",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": "comprehensive"
+    },
+
+    {
+        "user_input": "hey sup bot it's me",
+        "model_response": "Hello there! I'm Tina, an AI assistant with Turners. I'm the bot who can help you by suggesting which insurance policy might best fit their needs! Was this what you wanted to do today?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "yea why not. what insurance you got for me?",
+        "model_response": "We currently offer three kinds of insurance policies: Comprehensive insurance, Third Party Only insurance (TPO), and Mechanical Breakdown insurance (MBI). I can tell you more about them, but to narrow this down to a specific suggestion could we start by talking about the vehicle you may want to insure?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "ic ic. i've got a 2018 cherokee, how about that?",
+        "model_response": "A 2018 Cherokee, thank you. Now, could you tell me what kind of situation you'd want to get insurance for?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "idk like crashes and shit? like, car on car accidents, or if i hit a cow lmao",
+        "model_response": "Who wouldn't be worried about something like that? Those sound like sudden and unforseen accidents and since you're worried about hitting things that aren't cars, it's safe to say you'd be interested in cover for damage to other people's property (like cows). Now, another thing I'd like to clarify is, what kind of vehicle is your 2018 Cherokee? Is it a sedan, an SUV, a ute, or something else?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "you don't know? shouldnt you have like widespread access to turner's computers or something",
+        "model_response": "I don't have any direct connection to Turner's computers, though I can see why you'd think that. However, it helps me if I'm sure about some key details of your situation, so take this as me clarifying. Could you tell me what type of vehicle your 2018 Cherokee is?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "trolley",
+        "model_response": "I see. In that case, I'm afraid your 2018 Cherokee trolley doesn't sound like something our insurance policies could cover. Our insurance is meant for road vehicles like sedans or SUVs. If you'd like, one of our staff members can assist you further, or would you like to try checking for a different vehicle?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "trolley",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": "vehicle not a road vehicle",
+                "third_party_only": "vehicle not a road vehicle",
+                "mechanical_breakdown": "vehicle not a road vehicle"
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "lol jokes no, google 2018 jeep cherokee",
+        "model_response": "If you meant to tell me your vehicle is a 2018 Jeep Cherokee, I can recognise that brand as one who only manufactures SUVs. If that's the case, and if you were still interested in insurance that would cover both your vehicle and other people's property, then Comprehensive insurance would be a good fit. It insures your car in case of sudden accidents, includes cover for other people's cars and property, and also comes with mechanical breakdown insurance in case any wear and tear takes you off the road. Did you want to talk to a staff member about this or were you interested in checking a different vehicle?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "SUV",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": "comprehensive"
+        }
+    },
+
+    {
+        "user_input": "Hello, I'd like to ask about insurance for my car. I need cover for my car and insurance for in case I'm held liable for damages.",
+        "model_response": "Hello there! I'm Tina, an AI assistant with Turners. You've come to the right place: I can offer suggestions on which insurance policy we offer fits your situation. Would you be okay with me asking you a few questions so I can understand your situation better?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "Sure... I've got a 2023 Tesla Roadster...",
+        "model_response": "Great, thank you! Your 2023 Tesla Roadster is a relatively new car, and you said that you wanted cover both for your car and your liabilities, or damage you may be held responsible for in the event of an accident. Comprehensive insurance would be a good fit since it offers cover for your vehicle for damage from any sudden, unforseen and accidental damage, or damage you may cause other people's cars or property. It also comes with additional cover for mechanical breakdowns. You can find one of our staff members if you'd like to know more, or check another car for a new suggestion.",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "car",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": "comprehensive"
+        }
+    },
+
+    {
+        "user_input": "Hey, I want the best car insurance you have for my new car. I want everything covered. What's that called?",
+        "model_response": "Hello there! I'm Tina, an AI assistant with Turners. I can definitely help with insurance suggestions, but would you be okay with me asking more questions in case I need more information?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "car",
+            "budget": "flexible",
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "Sounds good. What do you need to know?",
+        "model_response": "Thanks for the consent. You've already given me plenty of information, including that you have a car you want to insure, and you're looking to be covered for as many situations as possible. To follow on from that, what year was your car manufactured?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "car",
+            "budget": "flexible",
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "Bought it elsewhere, but I'm just canvassing. What kind of cover would you suggest for my car? It's a 2015 Murano, 72 k's on it. Fairly well-taken care of, rego's KBY113.",
+        "model_response": "Excellent, thank you. Great work taking care of your car! Since you wanted cover for as many situations as possible for your 2015 Murano, I'd suggest our Comprehensive insurance. ",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "car",
+            "budget": "flexible",
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "Yes, I'd like full coverage for my car. Accidents, property, minor scratches.",
+        "model_response": "That's certainly something we can help with! Before we begin, I'm Tina, an AI assistant with Turners. Are you fine with me asking you some questions in case I need more information?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "car",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "Well, I mostly drive a 2016 hatchback, and I'm mostly worried about fixing it in case something like the clutch or alternator gives out.",
+        "model_response": "I understand. Sometimes it's the invisible wear and tear that causes the most damage over time. In that case, were you still looking to get cover in case of accidents, or would fixing mechanical damage like what you mentioned be the only thing you need insured?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "car",
+            "budget": null,
+            "cover_requested": "mechanical breakdown, uncertain",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "Hello, I need insurance that will cover everything--my car, other people's cars in case of an accident, and any other damage that might cause. I was involved in an accident before and I don't want to leave any bases uncovered.",
+        "model_response": "Hello, and thank you for that information. Before we begin, my name is Tina, and I'm an AI with Turners who can help make suggestions on the type of cover might best fit your needs. ",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "Do yous guys offer insurance for utes?",
+        "model_response": "Yes, we do! Most of our insurance policies may cover your ute, though I need to know more before I narrow that down to a recommendation. Could you tell me what year your ute is?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "ute",
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "r121613245fsd124",
+        "model_response": "Hello there! I'm Tina, an AI assistant with Turners. I'm here to help you choose which insurance policy might best fit your needs. I'll need to ask you some questions to make a good suggestion, though. Was that what you wanted to do today?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "ive got a 2007 isuzu, can you cover those?",
+        "model_response": "Hmm, that depends on a few things. That vehicle sounds relatively old, which means our Comprehensive insurance policies can't cover it. Can you tell me what _kind_ of vehicle your Isuzu is? Is it one of their sedans, a ute, or maybe even a light goods truck?",
+        "extracted_information": {
+            "vehicle_age": "more than 10 years",
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "heyo, i've got a 2023 crossover i just bought from you guys?",
+        "model_response": "Heyo! I'm Tina, and thanks for trusting us with both what you'll drive, and the insurance for it. I can recommend one of our insurance policies that could fit your needs for this vehicle. Was that something you wanted to do?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "crossover",
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "for sure",
+        "model_response": "Thank you! You said your crossover was from 2023. Could you tell me what kind of situations you'd want cover for?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "crossover",
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "i can afford to replace it myself. Maybe just mechanical breakdowns? and if i hit like a post or a tree? or someone else's car???",
+        "model_response": "All right, insurance for mechanical breakdowns and third party damage. In the case of your 2023 crossover, the only insurance policy that we offer that covers both mechanical breakdowns and damage to third parties would actually be our Comprehensive insurance. Our other policies, Third Party Only (TPO) and Mechanical Breakdown Insurance (MBI) only cover their respective events and no more. Does that sound like a good fit for your needs?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "crossover",
+            "budget": "flexible",
+            "cover_requested": "mbi and tpo",
+            "needs_more_info_from_user": false
+        },
+        "policy_recommendation": "comprehensive"
+    },
+
+    {
+        "user_input": "a mazda? got it here but i dont want antyhing too flash, just 3rd party or something",
+        "model_response": "I'll keep that in mind. I need to know more before I can make a suggestion, though. Was your Mazda a sedan, a ute, an SUV, or something else?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": "constrained",
+            "cover_requested": "third party only",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "a miata? you know those?",
+        "model_response": "Ah, the Mazda Miata is a sports car. Thank you. Right now I can suggest ",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "sports car",
+            "budget": "constrained",
+            "cover_requested": "third party only",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": "null"
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "I need insurance for my 2021 Honda Civic, the cheapest thing you guys offer.",
+        "model_response": "That's understandable. We can certainly insure your 2021 Honda Civic, and our cheapest option is Mechanical Breakdown Insurance, which will cover your vehicle for the cost of repairs due to mechanical or electrical breakdowns from wear & tear. One of our staff members can tell you more if you'd like, but was there any other vehicle you wanted to check with me?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "car",
+            "budget": "constrained",
+            "cover_requested": null,
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": "mechanical breakdown insurance"
+    },
+
+    {
+        "user_input": "I'm good, tks",
+        "model_response": "You're welcome! Glad I could help. See you around!",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "eh sure. Ty",
+        "model_response": "You're very welcome! I'll be here if you have any other vehicles you'd want to check with me.",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "My old ute needs insurance. Something basic will do.",
+        "model_response": "Let's have a look! I'd like to make sure I understand what you mean by 'basic'. Did you mean you only wanted the cheapest option we offer, or were there specific situations you're thinking of insuring for?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "ute",
+            "budget": "constrained",
+            "cover_requested": null,
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": "vehicle subtype ineligible"
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "oh, yeah nah, i want full cover. My ute's pretty expensive.",
+        "model_response": "Fair enough! I can understand wanting to protect a valuable asset. Speaking of your ute, can you tell me how old it is?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": "ute",
+            "budget": "constrained",
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "She's a 2006 Isuzu pathfinder",
+        "model_response": "I see. Unfortunately, the policy that would offer full cover, Comprehensive insurance, can only insure vehicles no more than 10 years old. You may want to consider exploring your options or speaking to one of our staff members. Was there another vehicle you were looking to insure?",
+        "extracted_information": {
+            "vehicle_age": "more than 10 years",
+            "vehicle_type": "ute",
+            "budget": "constrained",
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": "age more than 10 years",
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": "uninsurable"
+    },
+
+    {
+        "user_input": "Insurence for my SUV, a 2021 pajero. Can I get cover for aciddents?",
+        "model_response": "We may be able to insure your vehicle, but did you want the Pajero _itself_ to be covered in case of those accidents, or were you only worried about damage to _other people's_ vehicles or property?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "SUV",
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": null
+    },
+
+    {
+        "user_input": "oh Yeah full cover, whichever that one is. the pajero needs to be insured",
+        "model_response": "Excellent. Because your vehicle is a 2021 Pajero SUV, is less than 10 years old, and you were looking for insurance that would offer cover for the car itself, a Comprehensive Insurance policy would suit your needs best. This would insure the vehicle itself for any sudden, unforseen and accidental damage, and automatically includes cover for damage to third parties and mechanical breakdowns. If you need more information, please find one of our customer service representatives. Did you have another vehicle you'd like to check with me?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "SUV",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": "comprehensive"
+    },
+
+    {
+        "user_input": "oh ya my BMW, comprehensive too???",
+        "model_response": "Of course. Your other vehicle is a BMW, but I'll need to know more to narrow my suggestions down. Do you remember what year your BMW is?",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": true,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "2013 i think",
+        "model_response": "Thank you. I see your BMW is more than 10 years old. Unfortunately, our Comprehensive insurance policies can only cover vehicles less than 10 years old. Was there another vehicle you wanted to check with me?",
+        "extracted_information": {
+            "vehicle_age": "more than 10 years",
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": "age more than 10 years",
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            }
+        },
+        "policy_recommendation": "comprehensive uninsurable"
+    },
+
+    {
+        "user_input": "nvm ty",
+        "model_response": "No problem! See you around.",
+        "extracted_information": {
+            "vehicle_age": null,
+            "vehicle_type": null,
+            "budget": null,
+            "cover_requested": null,
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": null
+        }
+    },
+
+    {
+        "user_input": "Yeah this Yamaha I just bought from you guys, 2019. Like I said, I'll probably use this a lot, so I'm going to want full cover.",
+        "model_response": "Excellent. Yamaha, the manufacturer, only produces motorcycles at this time so it's safe to assume your 2019 Yamaha is a motorcycle. Because your Yamaha is less than 10 years old and you want 'full cover' or cover for any sudden, unforseen and accidentally damage, cover for damage you may cause other people's vehicles or property, and mechanical breakdown insurance, Comprehensive Insurance would be a good fit for your needs since that's exactly what it offers. Speak to one of our staff members if you'd like more information. Was there any other vehicle you wanted to check with me?",
+        "extracted_information": {
+            "vehicle_age": "less than 10 years",
+            "vehicle_type": "motorcycle",
+            "budget": null,
+            "cover_requested": "comprehensive",
+            "needs_more_info_from_user": false,
+            "policy_exceptions": {
+                "comprehensive": null,
+                "third_party_only": null,
+                "mechanical_breakdown": null
+            },
+            "policy_recommendation": "comprehensive"
+        }
+    }
+]
