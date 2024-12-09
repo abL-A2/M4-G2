@@ -54,26 +54,26 @@
 ### **Date:** Tue 10, Dec, 2024
 
 - **Yesterday:**  [What I completed?]
-  - [AA] 
-  - [AA] 
-  - [AA] 
+  - [AA] Finished frontend UI and backend API
+  - [AA] Training Gemini
+  - [AA] Use AI to generate examples
+  - [YL] Started training the AI. Follow same process.
+  - [YL] Still testing and refining.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM] 
+  - [CM] Tuning System Instructions. Tuning user prompts.
+  - [CM] Fixing some logic bugs. Sorting tri-state.
+  - [CM] Tidied up frontend UI.
 
 - **Today:**  [What I'm working on today?]
+  - [AA] Audited training data. 
+  - [AA] Check that it will not generate confusion or inconsistencies that the model can't handle.
   - [AA] 
-  - [AA] 
-  - [AA] 
+  - [YL] Continue to training the AI today.
   - [YL] 
   - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM]  
+  - [CM] Research on Story Telling. Started preparing slides with a story.
+  - [CM] Tidy up UI to make it more human, more user-friendly. Have clear call to action.
+  - [CM] Possibly using an API gateway. TYK - API gateway.
 
 - **Blockers:**  [What is blocking me?] 
   - [AA] None
