@@ -96,29 +96,29 @@
 ### **Date:** Wed 11, Dec, 2024
 
 - **Yesterday:**  [What I completed?]
+  - [AA] Built more training data samples. Draft instructions.
+  - [AA] Experimented with Tina, it works.
   - [AA] 
-  - [AA] 
-  - [AA] 
+  - [YL] Fine-tuning. Problem with system Instruction.
+  - [YL] Research test cases using AI.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM] 
+  - [CM] Fine-tuning Gemini on synthetic Tina data that created in GPT
+  - [CM] Almost finished presentation slides
+  - [CM] system Instruction tuning, and fixed some logic bugs in the backend.
 
 - **Today:**  [What I'm working on today?]
+  - [AA] Start dockerising backend and frontend.
+  - [AA] Finish presentation today is the plan.
   - [AA] 
-  - [AA] 
-  - [AA] 
+  - [YL] Create prototype presentation today.
+  - [YL] Finalise demo app.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM]  
+  - [CM] Tyk API Gateway - Create secure frontend for the API's.
+  - [CM] Finalise presentation.
+  - [CM] Start looking at mission 5.
 
 - **Blockers:**  [What is blocking me?] 
-  - [AA] None
+  - [AA] None (I hope.)
   - [YL] None
   - [CM] None
 
