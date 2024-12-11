@@ -141,26 +141,27 @@
   - [AA] Nothing.
   - [AA] 
   - [AA] 
+  - [YL] Creating the presentation.
+  - [YL] Tidy-up demo app.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM] 
+  - [CM] Gave-up on fine-tuning.
+  - [CM] Worked on system Instructions.
+  - [CM] Retuned all sys Instruc. and prompts to sound like Tina.
+  - [CM] Work on slides for slides for presentation.
 
 - **Today:**  [What I'm working on today?]
   - [AA] Relearning how to navigate deno's import framework
   - [AA] Reattempting to Dockerise my app without it breaking.
   - [AA] 
+  - [YL] Work on slides, presentation.
   - [YL] 
   - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM]  
+  - [CM] Work on sildes.
+  - [CM] Tidy-up repo. for submission. Push some code.
+  - [CM] And if there is time, Tyk and Nginx.
 
 - **Blockers:**  [What is blocking me?] 
-  - [AA] Unexpected behaviour change from dev environment in VScode to Dockerised app
+  - [AA] Unexpected behaviour change from dev environment in VScode to Dockerised app.
   - [YL] None
   - [CM] None
 
