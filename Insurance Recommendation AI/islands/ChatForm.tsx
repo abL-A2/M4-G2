@@ -2,7 +2,6 @@ import { useSignal } from "@preact/signals";
 import { marky } from "https://deno.land/x/marky@v1.1.6/mod.ts";
 // import { resetPropWarnings } from "preact/debug";
 
-
 // designates name for the AI's responses
 const aiName = "Tina";
 
