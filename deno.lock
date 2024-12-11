@@ -1,0 +1,18 @@
+{
+  "version": "4",
+  "specifiers": {
+    "npm:@google/generative-ai@0.21": "0.21.0"
+  },
+  "npm": {
+    "@google/generative-ai@0.21.0": {
+      "integrity": "sha512-7XhUbtnlkSEZK15kN3t+tzIMxsbKm/dSkKBFalj+20NvPKe1kBY7mR2P7vuijEn+f06z5+A8bVGKO0v39cr6Wg=="
+    }
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:@google/generative-ai@0.21"
+      ]
+    }
+  }
+}
