@@ -138,7 +138,7 @@
 ### **Date:** Thu 12, Dec, 2024
 
 - **Yesterday:**  [What I completed?]
-  - [AA] 
+  - [AA] Nothing.
   - [AA] 
   - [AA] 
   - [YL] 
@@ -149,8 +149,8 @@
   - [CM] 
 
 - **Today:**  [What I'm working on today?]
-  - [AA] 
-  - [AA] 
+  - [AA] Relearning how to navigate deno's import framework
+  - [AA] Reattempting to Dockerise my app without it breaking.
   - [AA] 
   - [YL] 
   - [YL] 
@@ -160,7 +160,7 @@
   - [CM]  
 
 - **Blockers:**  [What is blocking me?] 
-  - [AA] None
+  - [AA] Unexpected behaviour change from dev environment in VScode to Dockerised app
   - [YL] None
   - [CM] None
 
