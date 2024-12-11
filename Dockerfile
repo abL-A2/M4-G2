@@ -1,5 +1,5 @@
 # base image for Node.js build stage
-FROM node:20 as node_modules_builder
+FROM node:20 AS node_modules_builder
 
 # set working directory
 WORKDIR /app
@@ -36,6 +36,7 @@ CMD ["deno", "task", "preview"]
 
 # you imported with both deno and npm, so you need to use deno's compatibility mode you potato.
 # did you do `deno run --allow-net --allow-write --allow-run --allow-sys dev.ts` before you Dockerised?
+# where's your .dockerignore?
 # did you remember to push updates?
 # did you remember to set up .env for docker?
 
