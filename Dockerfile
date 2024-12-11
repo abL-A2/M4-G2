@@ -1,36 +1,45 @@
-# Base image for Node.js build stage
+# base image for Node.js build stage
 FROM node:20 as node_modules_builder
 
-# Set working directory
+# set working directory
 WORKDIR /app
 
-# Copy only package.json and package-lock.json for dependencies
+# copy only package.json and package-lock.json for dependencies
 COPY package*.json ./
 
-# Install Node.js dependencies
+# install Node.js dependencies
 RUN npm install
 
-# Base image for Deno
+# base image for Deno
 FROM denoland/deno:latest
 
-# Set working directory
+# working directory, can be any name
 WORKDIR /app
 
-# Copy Node.js modules from the previous stage
+# copy Node.js modules from the previous stage
 COPY --from=node_modules_builder /app/node_modules ./node_modules
 
-# Copy Deno project files
+# copy Deno project files
 COPY . .
 
+# env here 
 ENV AI_MODEL_API_KEY=AIzaSyBgEG_u5U_ksaihV4OPTflMBrT0TK0m1_w
 
-# Build the Deno app (Deno's compatibility mode for Node.js dependencies)
+# build the Deno app - Deno's compatibility mode for Node.js dependencies
 RUN deno task build
 
-# Run the app in production mode
+# expose port
+EXPOSE 8000
+
+# run
 CMD ["deno", "task", "preview"]
 
 # you imported with both deno and npm, so you need to use deno's compatibility mode you potato.
 # did you do `deno run --allow-net --allow-write --allow-run --allow-sys dev.ts` before you Dockerised?
 # did you remember to push updates?
 # did you remember to set up .env for docker?
+
+# TO BUILD:
+# docker build -t deno-node-app .
+# TO RUN:
+# docker run -p 8000:8000 deno-node-app
