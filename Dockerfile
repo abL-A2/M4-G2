@@ -22,11 +22,15 @@ COPY --from=node_modules_builder /app/node_modules ./node_modules
 # Copy Deno project files
 COPY . .
 
+ENV AI_MODEL_API_KEY=AIzaSyBgEG_u5U_ksaihV4OPTflMBrT0TK0m1_w
+
 # Build the Deno app (Deno's compatibility mode for Node.js dependencies)
 RUN deno task build
 
 # Run the app in production mode
 CMD ["deno", "task", "preview"]
 
-# you imported with both deno and npm, so you need to use deno's compatibility mode.
-# did you do `deno run --node-modules-dir dev.ts` before you Dockerised?
+# you imported with both deno and npm, so you need to use deno's compatibility mode you potato.
+# did you do `deno run --allow-net --allow-write --allow-run --allow-sys dev.ts` before you Dockerised?
+# did you remember to push updates?
+# did you remember to set up .env for docker?
