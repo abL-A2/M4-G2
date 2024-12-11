@@ -54,26 +54,26 @@
 ### **Date:** Tue 10, Dec, 2024
 
 - **Yesterday:**  [What I completed?]
-  - [AA] 
-  - [AA] 
-  - [AA] 
+  - [AA] Finished frontend UI and backend API
+  - [AA] Training Gemini
+  - [AA] Use AI to generate examples
+  - [YL] Started training the AI. Follow same process.
+  - [YL] Still testing and refining.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM] 
+  - [CM] Tuning System Instructions. Tuning user prompts.
+  - [CM] Fixing some logic bugs. Sorting tri-state.
+  - [CM] Tidied up frontend UI.
 
 - **Today:**  [What I'm working on today?]
+  - [AA] Audited training data. 
+  - [AA] Check that it will not generate confusion or inconsistencies that the model can't handle.
   - [AA] 
-  - [AA] 
-  - [AA] 
+  - [YL] Continue to training the AI today.
   - [YL] 
   - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM]  
+  - [CM] Research on Story Telling. Started preparing slides with a story.
+  - [CM] Tidy up UI to make it more human, more user-friendly. Have clear call to action.
+  - [CM] Possibly using an API gateway. TYK - API gateway.
 
 - **Blockers:**  [What is blocking me?] 
   - [AA] None
@@ -96,29 +96,29 @@
 ### **Date:** Wed 11, Dec, 2024
 
 - **Yesterday:**  [What I completed?]
+  - [AA] Built more training data samples. Draft instructions.
+  - [AA] Experimented with Tina, it works.
   - [AA] 
-  - [AA] 
-  - [AA] 
+  - [YL] Fine-tuning. Problem with system Instruction.
+  - [YL] Research test cases using AI.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM] 
+  - [CM] Fine-tuning Gemini on synthetic Tina data that created in GPT
+  - [CM] Almost finished presentation slides
+  - [CM] system Instruction tuning, and fixed some logic bugs in the backend.
 
 - **Today:**  [What I'm working on today?]
+  - [AA] Start dockerising backend and frontend.
+  - [AA] Finish presentation today is the plan.
   - [AA] 
-  - [AA] 
-  - [AA] 
+  - [YL] Create prototype presentation today.
+  - [YL] Finalise demo app.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM]  
+  - [CM] Tyk API Gateway - Create secure frontend for the API's.
+  - [CM] Finalise presentation.
+  - [CM] Start looking at mission 5.
 
 - **Blockers:**  [What is blocking me?] 
-  - [AA] None
+  - [AA] None (I hope.)
   - [YL] None
   - [CM] None
 
@@ -138,29 +138,30 @@
 ### **Date:** Thu 12, Dec, 2024
 
 - **Yesterday:**  [What I completed?]
+  - [AA] Nothing.
   - [AA] 
   - [AA] 
-  - [AA] 
+  - [YL] Creating the presentation.
+  - [YL] Tidy-up demo app.
   - [YL] 
-  - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM] 
+  - [CM] Gave-up on fine-tuning.
+  - [CM] Worked on system Instructions.
+  - [CM] Retuned all sys Instruc. and prompts to sound like Tina.
+  - [CM] Work on slides for slides for presentation.
 
 - **Today:**  [What I'm working on today?]
+  - [AA] Relearning how to navigate deno's import framework
+  - [AA] Reattempting to Dockerise my app without it breaking.
   - [AA] 
-  - [AA] 
-  - [AA] 
+  - [YL] Work on slides, presentation.
   - [YL] 
   - [YL] 
-  - [YL] 
-  - [CM] 
-  - [CM] 
-  - [CM]  
+  - [CM] Work on sildes.
+  - [CM] Tidy-up repo. for submission. Push some code.
+  - [CM] And if there is time, Tyk and Nginx.
 
 - **Blockers:**  [What is blocking me?] 
-  - [AA] None
+  - [AA] Unexpected behaviour change from dev environment in VScode to Dockerised app.
   - [YL] None
   - [CM] None
 
