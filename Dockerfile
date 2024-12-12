@@ -34,11 +34,11 @@ EXPOSE 8000
 # run
 CMD ["deno", "task", "preview"]
 
-# you imported with both deno and npm, so you need to use deno's compatibility mode you potato.
-# did you do `deno run --allow-net --allow-write --allow-run --allow-sys dev.ts` before you Dockerised?
-# where's your .dockerignore?
-# did you remember to push updates?
-# did you remember to set up .env for docker?
+# use deno's compatibility mode you intergalactic potato
+# test before reattempt: `deno run --allow-net --allow-write --allow-run --allow-sys dev.ts`
+# check .dockerignore
+# push updates
+# set up .env for docker?
 
 # TO BUILD:
 # docker build -t deno-node-app .
